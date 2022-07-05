@@ -1,0 +1,332 @@
+   /* header & footer css */
+   /*
+==========================================
+   01. header CSS
+==========================================
+*/
+   
+   #header {
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       z-index: 999;
+       background: linear-gradient(180deg, #C4C4C4 0%, #C4C4C4 0%, #FFFFFF 0.01%, rgba(241, 241, 241, 0.871268) 0.02%, rgba(196, 196, 196, 0.474006) 99.99%, rgba(196, 196, 196, 0) 100%);
+       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+       -webkit-transition: 0.5s;
+       transition: 0.5s;
+   }
+   
+   .header-area .navbar {
+       padding: 15px 0px;
+   }
+   
+   .header-area .navbar-brand>img {
+       max-height: 63px;
+       height: 100%;
+   }
+   
+   .header-area .nav-link {
+       padding: 0px
+   }
+   
+   .header-area .navbar .navbar-nav {
+       align-items: center;
+   }
+   
+   .header-area .navbar .navbar-nav .nav-item {
+       padding-right: 30px;
+   }
+   
+   .header-area .navbar .navbar-nav .nav-item:last-child {
+       padding-right: 0px;
+   }
+   
+   .header-area .navbar-nav .nav-link {
+       font-weight: 400;
+       font-size: 18px;
+       color: var(--s-primary-color);
+       padding: 0px;
+   }
+   
+   .header-area .fa-cart-arrow-down {
+       font-size: 25px;
+       color: var(--s-primary-color);
+   }
+   
+   .header-area .navbar-nav ul.dropdown-menu {
+       padding: 0px;
+   }
+   
+   .header-area .navbar-nav ul.dropdown-menu .nav-link {
+       padding: 5px 10px;
+       border-bottom: 1px solid #ddd;
+   }
+   
+   .header-area .navbar-nav ul.dropdown-menu .nav-items:last-child .nav-link {
+       border: none;
+   }
+   
+   .header-area .dropdown-menu .dropdown-item.active,
+   .header-area .dropdown-menu .dropdown-item:focus,
+   .header-area .dropdown-menu .dropdown-item:hover {
+       background-color: transparent;
+   }
+   
+   .header-area .navbar-nav .nav-link.active,
+   .header-area .navbar-nav .nav-link:focus,
+   .header-area .navbar-nav .nav-link:hover {
+       color: var(--s-primary-color1);
+   }
+   
+   .header-area .navbar-brand {
+       padding: 0px;
+   }
+   
+   .header-area .login-b {
+       padding-left: 40px;
+   }
+   /*
+==========================================
+13. footer CSS
+==========================================
+*/
+   
+   .footer {
+       background: url(../img/footer.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: auto;
+   }
+   
+   .footer>img {
+       position: absolute;
+   }
+   .footer-logo{
+    display: inline-block;
+    width: 135px;
+    height: 135px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+ .footer-logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+   .footer-content {
+       position: relative;
+       padding-top: 237px;
+       padding-bottom: 30px;
+   }
+   
+   .footer .f-link-h .s-sub-heading {
+       text-align: left;
+       color: var(--white);
+   }
+   
+   .footer .f-link-h ul li {
+       margin-bottom: 3px;
+   }
+   
+   .footer .f-link-h ul li a {
+       margin-bottom: 10px;
+       font-weight: 400;
+       font-size: 14px;
+       color: var(--white);
+   }
+   
+   .footer .f-link-h .f-icons-f {
+       display: flex;
+       padding-bottom: 5px;
+   }
+   
+   .footer .f-link-h .f-icons-f>img {
+       margin-right: 8px;
+       margin-top: 4px;
+   }
+   
+   .footer .f-s-icon a {
+       margin-right: 12px;
+   }
+   
+   .footer p {
+       color: var(--white);
+   }
+   
+   .footer .f-link-h .f-icons-f .location {
+       width: 11px;
+       height: 15px;
+   }
+   
+   .footer .f-link-h .f-icons-f .phone {
+       width: 15px;
+       height: 15px;
+   }
+   
+   .footer .f-s-icon a {
+       display: inline-block;
+       border-radius: 50%;
+       width: 40px;
+       height: 40px;
+       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+       text-align: center;
+       line-height: 40px;
+   }
+   
+   .footer .f-s-icon a:nth-child(1) {
+       background: #2F80EC;
+   }
+   
+   .footer .f-s-icon a:nth-child(2) {
+       background: #61CFF3;
+   }
+   
+   .footer .f-s-icon a:nth-child(3) {
+       background: #2D9CDB;
+   }
+   
+   .footer .f-s-icon a:nth-child(4) {
+       background: #E9455A
+   }
+   
+   .footer-hr hr {
+       color: var(--white);
+   }
+   /* Responsive  */
+   
+   @media (min-width: 992px) and (max-width: 1367px) {
+       .footer .f-link-h ul li a {
+           font-size: 13px;
+       }
+   }
+   /* Tablet Layout: 768px. */
+   
+   @media (min-width: 768px) and (max-width: 991px) {}
+   
+   @media (min-width: 320px) and (max-width: 991px) {
+       .header-area .navbar .navbar-nav .nav-item {
+           padding-right: 15px;
+       }
+       .header-area .navbar-nav .nav-link.active,
+       .header-area .navbar-nav .nav-link {
+           font-size: 15px;
+           font-weight: 500;
+       }
+       .header-area .navbar .navbar-nav .nav-item:last-child {
+           margin-left: 15px;
+       }
+       /* footer */
+       .footer .f-link-h .s-sub-heading {
+           font-size: 18px;
+           font-weight: 500;
+       }
+       .footer .f-link-h ul li a,
+       .footer p {
+           font-size: 13px;
+       }
+       .footer .f-link-h ul li {
+           margin-bottom: 2px;
+       }
+   }
+   /* Mobile Layout: 320px. */
+   
+   @media (max-width: 767px) {
+       .header-area {
+           padding: 0px;
+       }
+       .navbar-toggler {
+           padding: 0px;
+           font-size: 1.5rem;
+           width: 30px;
+           margin-left: 1rem;
+       }
+       .header-area .navbar-toggler[aria-expanded="true"] .fa-bars {
+           display: none;
+       }
+       .header-area .navbar-toggler[aria-expanded="false"] .fa-bars {
+           display: block;
+       }
+       .header-area .navbar-toggler[aria-expanded="true"] .fa-times {
+           display: block;
+       }
+       .header-area .navbar-toggler[aria-expanded="false"] .fa-times {
+           display: none;
+       }
+       .header-area .navbar>.container,
+       .header-area .navbar>.container-fluid,
+       .header-area .navbar>.container-lg,
+       .header-area .navbar>.container-md,
+       .header-area .navbar>.container-sm,
+       .header-area .navbar>.container-xl,
+       .header-area .navbar>.container-xxl {
+           width: 100%;
+           max-width: initial;
+           padding: 0px;
+       }
+       .header-area .navbar-toggler i {
+           color: var(--s-primary-color);
+       }
+       .header-area .navbar-toggler:focus {
+           text-decoration: none;
+           outline: 0;
+           box-shadow: 0 0 0 0rem;
+       }
+       .header-area .navbar .navbar-collapse {
+           position: relative;
+           z-index: 1;
+           margin-bottom: 20px;
+       }
+       .header-area .navbar .navbar-nav {
+           align-items: flex-start;
+           padding: 25px 20px;
+       }
+       .header-area .navbar .navbar-collapse::before {
+           content: '';
+           position: absolute;
+           top: -0%;
+           left: 0%;
+           background: url(../img/icons/header-icon-bg.png);
+           width: 100%;
+           height: 120%;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .header-area .login-b {
+           text-align: end;
+           margin-right: 1rem;
+           padding-left: 15px;
+       }
+       .navbar-brand {
+           margin-right: .5rem;
+       }
+       .header-area .navbar-brand>img {
+           max-height: 50px;
+           height: 100%;
+           max-width: 80px;
+       }
+       .header-area .navbar-nav .nav-item>.nav-link.active,
+       .header-area .navbar-nav .nav-item>.nav-link:hover,
+       .header-area .navbar-nav .nav-item>.nav-link:focus,
+       .header-area .navbar-nav .nav-item>.dropdown>.nav-link,
+       .header-area .navbar-nav .nav-item>.nav-link {
+           font-size: 15px;
+           color: var(--white);
+           font-weight: 400;
+           margin-bottom: 15px;
+           line-height: 1;
+       }
+   }
+   /* Wide Mobile Layout: 480px. */
+   
+   @media (min-width: 320px) and (max-width: 575px) {
+       .footer .f-link .mt-15 {
+           margin-top: 10px;
+       }
+       .footer .f-link.grid-2 {
+           grid-template-columns: 35% 63%;
+       }
+   }
