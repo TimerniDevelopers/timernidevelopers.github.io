@@ -1,0 +1,388 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Angwes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--=== fontawesome-free-5.15.2 ===-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--=== Google Fonts ===-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!--=== Bootstrap 4 ===-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--=== Main Css ===-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--=== Style & Responsive  Css ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== Responsive Css ===-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link rel="stylesheet" href="https://timerni.com/assets/backend/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://timerni.com/assets/backend/datatables-responsive/css/responsive.bootstrap4.min.css">
+
+</head>
+
+<body class="sidebar-toggled">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <img src="assets/img/logo-top.png" alt="" class="logo">
+                </div>
+                <div class="sidebar-brand-text mx-3"> ANGWES</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link" href="teacher.html">
+                    <i class="fas fa-users"></i>
+                    <span>Teaceher</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item active">
+                <a class="nav-link" href="parents.html">
+                    <i class="fas fa-user"></i>
+                    <span>Parents</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-university"></i>
+                    <span>Cariculam</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="course.html">Course Outline</a>
+                        <a class="collapse-item" href="routine.html">Routine</a>
+                        <a class="collapse-item" href="assignment.html">Assignment</a>
+                        <a class="collapse-item" href="tutorial.html">Tutorial</a>
+                        <a class="collapse-item" href="attendance.html">Attendance</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="live-class.html">
+                    <i class="fas fa-globe"></i>
+                    <span>Live Class</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="take-exam.html">
+                    <i class="fas fa-book"></i>
+                    <span>Take Exam</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Library</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="books.html">Books</a>
+                        <a class="collapse-item" href="collection.html">Collection</a>
+                        <a class="collapse-item" href="books-issue.html">Issue</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="exam-schudule.html">
+                    <i class="fas fa-clock"></i>
+                    <span>Exam Schedule</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-calculator"></i>
+                    <span>Accounting</span>
+                </a>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="payment.html">Payment</a>
+                        <a class="collapse-item" href="wallet.html">Wallet</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="job.html">
+                    <i class="fas fa-search"></i>
+                    <span>Find The Job</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="certificate.html">
+                    <i class="fas fa-certificate"></i>
+                    <span>Course Certifacte</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="message.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Message</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Annoucement</span>
+                </a>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="notice.html">Notice</a>
+                        <a class="collapse-item" href="holiday.html">Holiday</a>
+                        <a class="collapse-item" href="event.html">Events</a>
+                    </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+
+        <div id="content-wrapper" class="contentWrapper d-flex flex-column">
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <div class="fa-pull-left">
+                                        <h3 class="card-title">
+                                            <i class="fas fa-list"></i> Manage Team Member Category
+                                        </h3>
+                                    </div>
+                                    <div class="fa-pull-right">
+                                        <a href="https://timerni.com/admin/add/team/member/category">
+                                            <button class="btn btn-info"><i class="fa fa-plus"></i><b> Add Team Member Category</b></button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div id="list_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="dataTables_length" id="list_length"><label>Show <select name="list_length" aria-controls="list" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div id="list_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="list"></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table id="list" class="table dt-responsive table-bordered table-striped nowrap dataTable no-footer dtr-inline" role="grid" aria-describedby="list_info">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="sorting" tabindex="0" aria-controls="list" rowspan="1" colspan="1" aria-label="#: activate to sort column ascending">#</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="list" rowspan="1" colspan="1" aria-label="Sort Form: activate to sort column ascending">Sort Form</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="list" rowspan="1" colspan="1" aria-label="Full Form: activate to sort column ascending" style="">Full Form</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="list" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="">Status</th>
+                                                            <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Action" style="">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr role="row" class="odd">
+                                                            <td tabindex="0">1</td>
+                                                            <td>BIRD</td>
+                                                            <td style="">Branding, Advertising, Sales &amp; Marketing</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/11" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="11" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td tabindex="0">2</td>
+                                                            <td>DAMN</td>
+                                                            <td style="">Directors of Operation and Company Managers</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/10" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="10" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td tabindex="0">3</td>
+                                                            <td>STAR</td>
+                                                            <td style="">Applied Science and Technology reseARch</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/9" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="9" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td tabindex="0">4</td>
+                                                            <td>CASE</td>
+                                                            <td style="">Computer-Aided Software Engineering</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/8" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="8" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td tabindex="0">5</td>
+                                                            <td>CAR</td>
+                                                            <td style="">Community engAgement and Research</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/7" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="7" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td tabindex="0">6</td>
+                                                            <td>SCAN</td>
+                                                            <td style="">cyber SeCurity, network And system eNgineering</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/6" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="6" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td tabindex="0">7</td>
+                                                            <td>MAD</td>
+                                                            <td style="">Multimedia And graphics Design</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/5" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="5" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td tabindex="0">8</td>
+                                                            <td>HUMAN</td>
+                                                            <td style="">HUman resource and employment MANagement</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/4" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="4" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td tabindex="0">9</td>
+                                                            <td>BUS</td>
+                                                            <td style="">BUsiness analytics and data Science</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/3" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="3" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td tabindex="0">10</td>
+                                                            <td>MARS</td>
+                                                            <td style="">environMent, ARt, Science, and innovation</td>
+                                                            <td style=""><span class="badge badge-success">Active</span></td>
+                                                            <td style="">
+                                                                <a style="padding:2px;font-size:15px;" href="https://timerni.com/admin/edit/team/member/category/2" class="btn btn-primary btn-xs pl-1 pr-1"> <i class="fa fa-folder-open"></i> Edit </a>
+                                                                <a href="javascript:void(0);" style="padding:2px; font-size:15px; color: #fff" class="btn btn-danger btn-xs pl-1 pr-1" id="2" onclick="deleteTeamMemberCategory(this.id,event)"> <i class="fas fa-trash"></i> Delete </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="list_processing" class="dataTables_processing card" style="display: none;">Processing...</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-5">
+                                                <div class="dataTables_info" id="list_info" role="status" aria-live="polite">Showing 1 to 10 of 11 entries</div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-7">
+                                                <div class="dataTables_paginate paging_simple_numbers" id="list_paginate">
+                                                    <ul class="pagination">
+                                                        <li class="paginate_button page-item previous disabled" id="list_previous"><a href="#" aria-controls="list" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                                                        <li class="paginate_button page-item active"><a href="#" aria-controls="list" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                                        <li class="paginate_button page-item "><a href="#" aria-controls="list" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                                        <li class="paginate_button page-item next" id="list_next"><a href="#" aria-controls="list" data-dt-idx="3" tabindex="0" class="page-link">Next</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End of Sidebar -->
+        </div>
+        <!--=== All Plugin ===-->
+        <!--============= Jquery-3.6.0 =============-->
+        <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <!--=== Bootstrap4 js ===-->
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+        <!-- Data Table -->
+        <script src="https://timerni.com/assets/backend/datatables/jquery.dataTables.min.js"></script>
+        <script src="https://timerni.com/assets/backend/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="https://timerni.com/assets/backend/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="https://timerni.com/assets/backend/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <!--=== Main js ===-->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>

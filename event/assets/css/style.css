@@ -1,0 +1,288 @@
+/* busket css */
+
+
+/* ticket */
+
+.book-item .card-body {
+    padding: 0;
+}
+
+.book-item .card-body li {
+    padding: .75rem;
+}
+
+.ticket-nav {
+    display: inline-flex;
+    background-color: #DADBDE;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.ticket-nav li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+/* .ticket-nav li:nth-child(2) a {
+    border-radius: 0px 30px 30px 0px;
+} */
+
+.ticket-nav li a {
+    padding: 8px 20px;
+    line-height: 1;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.ticket-nav li a.active {
+    background: #fff;
+}
+
+.ticket-nav li a i {
+    color: #000000;
+}
+
+.ticket-nav li a.active i {
+    color: #2E3192;
+}
+
+.price-nav {
+    display: inline-flex;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.price-nav li {
+    display: inline-block;
+}
+
+.price-nav li a {
+    padding: 10px 20px;
+    line-height: 1;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.price-nav li a.active {
+    background: #2E3192;
+}
+
+.price-nav li a.active i {
+    color: #fff;
+}
+
+.price-nav li:nth-child(2) a {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.ticket-book-system .more-event-btn a {
+    color: #fff;
+}
+
+.list-items .card .card-img img {
+    width: 100%;
+}
+
+.table-view-content .table thead th {
+    border-bottom: none;
+}
+
+.paper-assign .search-box {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 10px 10px;
+    padding: 8px 12px;
+    flex: 1;
+}
+
+.paper-assign .search-box i {
+    cursor: pointer
+}
+
+.paper-assign .search-box input {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.scroll-menu::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 20px;
+}
+
+
+/* Track */
+
+.scroll-menu::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px #E5E5E5;
+    border-radius: 5px;
+}
+
+
+/* Handle */
+
+.scroll-menu::-webkit-scrollbar-thumb {
+    background: #3399FF;
+    border-radius: 5px;
+}
+
+
+/* Handle on hover */
+
+.scroll-menu::-webkit-scrollbar-thumb:hover {
+    background: #3399FF;
+}
+
+.drob-item-menu {
+    max-height: 150px;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+
+
+/* .comment-box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.comment-box .category-btn,
+.comment-box .view-all-btn {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease 0s;
+}
+
+.comment-box .card-body {
+    background-color: #DFE0F3;
+}
+
+.comment-box .dropdown-menu.show {
+    width: 100%;
+}
+
+.comment-box .dropdown-toggle::after {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+}
+
+.comment-box .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotateX( 180deg);
+    -webkit-transform: rotateX( 180deg);
+    -moz-transform: rotateX( 180deg);
+    -ms-transform: rotateX( 180deg);
+    -o-transform: rotateX( 180deg);
+}
+
+.comment-box .view-all-btn {
+    background-color: #696DD2;
+    color: #fff;
+}
+
+.comment-box .card-footer {
+    background-color: #2E3192;
+    color: #fff;
+}
+
+.drob-item-menu .dropdown-item:nth-child(1) {
+    border-top: 1px solid #ddd;
+}
+
+.drob-item-menu .dropdown-item {
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.article .card {
+    padding: 20px 40px;
+}
+
+.article-heading {
+    padding: 15px 0px;
+}
+
+.art-sub-title {
+    padding: 10px 0px;
+}
+
+.atr-gap {
+    margin-bottom: 15px;
+}
+
+.atr-gap p,
+.art-list li {
+    padding-bottom: 10PX;
+}
+
+.art-list {
+    list-style: decimal;
+    padding-left: 1em;
+}
+
+.paper-sub-btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.paper-sub-btn span {
+    background: #ddd;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.rating-ra {
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+/* paper-review comment */
+
+.review-tabs .nav-link {
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    background: #f9f9f9;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.review-tabs .nav-link:last-child {
+    border-right: 1px solid #dee2e6;
+}
+
+.review-tabs .nav-item.show .nav-link,
+.review-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 2px solid #2E3192;
+}
+
+.review-comment {
+    padding: 20px 40px;
+}
+
+.review-comment table th {
+    width: 15%;
+}

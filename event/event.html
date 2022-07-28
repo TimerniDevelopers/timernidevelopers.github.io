@@ -1,0 +1,639 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Events Dashboard</title>
+    <meta Title="description" content="">
+    <meta Title="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--=== fontawesome-free-5.15.2 ===-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--=== Google Fonts ===-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap" rel="stylesheet">
+    <!--=== Bootstrap 4 ===-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--=== Main Css ===-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--=== Style & Responsive  Css ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- navs -->
+    <div class="topbar">
+        <nav class="flex-div nav-items">
+            <div class="flex-div nav-left">
+                <img src="assets/img/menu.png" alt="" class="menu-icon">
+                <a href="#">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </a>
+
+            </div>
+
+            <div class="nav-right">
+                <ul class="flex-div">
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <!-- Counter - Alerts -->
+                            <span class="badge badge-danger badge-counter">3+</span>
+                        </a>
+                        <!-- Dropdown - Alerts -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">
+                                Notification
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fas fa-file-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">October 12, 2021</div>
+                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-success">
+                                        <i class="fas fa-donate text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">October 12, 2021</div>
+                                    $290.29 has been deposited into your account!
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-warning">
+                                        <i class="fas fa-exclamation-triangle text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 2, 2020</div>
+                                    Spending Alert: We've noticed unusually high spending for your account.
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Notification</a>
+                        </div>
+                    </li>
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Radowan Bhuiyan</span>
+                            <img class="img-profile rounded-circle" src="assets/img/undraw_profile.svg">
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- ------- sidebar ------- -->
+    <div class="sidebar ">
+        <div class="shortcut-link">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Volunteer Application</p>
+                    </a>
+
+                </li>
+                <hr>
+                <li>
+                    <a href="boo">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <p>Your Booked Ticket </p>
+                    </a>
+
+                </li>
+                <hr>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-ticket-alt"></i>
+                        <p>Booking Ticket</p>
+                    </a>
+
+                </li>
+                <hr>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-ticket-alt"></i>
+                        <p>Blog Store & Meta Tag</p>
+                    </a>
+
+                </li>
+                <hr>
+                <li>
+                    <a href="event.html">
+                        <i class="fas fa-calendar"></i>
+                        <p>Create an Event</p>
+                    </a>
+
+
+                </li>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ------- main ------- -->
+    <div class="container-1">
+        <div class="book-item my-events">
+            <div class="flex-div j-b pb-3">
+                <div class="section-title">
+                    <h3>Your Booked Event</h3>
+                </div>
+                <nav class="flex-div">
+                    <ul class="nav price-nav" id="nav-tab" role="tablist">
+                        <li>
+                            <a class="nav-item nav-link active" id="grid-tab" data-toggle="tab" href="#grid" role="tab" aria-controls="grid" aria-selected="true">
+                                <i class="fa fa-th-large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item nav-link" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false"><i class="fa fa-list"></i></a>
+                        </li>
+                    </ul>
+                    <div class="ml-2">
+                        <a href="#" class="btn add-more">
+                            <i class="fas fa-plus pr-2"></i>
+                            <span>Add Blog</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade  show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                    <div class="list-container list-5 ticket-book-system">
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times green"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times red"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times green"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times red"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times green"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                        <div class="list-items">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/img/event1.png" alt="events" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <h5 class="font-20">Happy New Year Event</h5>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <div class="dot-item">
+                                                            <div class="dot1"></div>
+                                                            <div class="dot2"></div>
+                                                            <div class="dot3"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <p class="font-20">Status</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="status ">
+                                                        <i class="fas fa-times green"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="sidebar-divider">
+                                        <li class="more-event-btn">
+
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-3">
+                                                    <a href="#">More about the event</a>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#">
+                                                        <i class="fas fa-eye pr-2"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-items -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <table class="table table-view-content">
+                        <thead class="table-head">
+                            <tr>
+                                <th>#</th>
+                                <th>Photo</th>
+                                <th>Event Title</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Photo"><img class="img-profile" src="assets/img/undraw_profile.svg"></td>
+                                <td data-label="Event Title">Bangobondhu Time Equality Convention(TEC)</td>
+                                <td data-label="Description" class="width-40">Our Adverts and Bidding for Funding Our Our Adverts and Bidding for Funding Our Adverts and Bidding for Funding</td>
+                                <td data-label="Status">
+                                    <a href="#" class="status ">
+                                        <i class="fas fa-times green"></i>
+                                    </a>
+                                </td>
+                                <td data-label="Action">
+                                    <a href="#" class="text-black">
+                                        <i class="fas fa-edit font-20"></i>
+                                    </a>
+                                    <a href="#" class="text-black ml-2">
+                                        <i class="fas fa-trash-alt "></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ------- sidebar ------- -->
+    <!---- main End ---->
+    <!--=== All Plugin ===-->
+    <!--============= Jquery-3.6.0 =============-->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!--=== Bootstrap4 js ===-->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!--=== owl carousel ===-->
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+    <!--=== Main js ===-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- <script>
+        var menuIcon = document.querySelector(".menu-icon");
+        var sidebar = document.querySelector(".sidebar");
+        var container = document.querySelector(".container");
+
+        menuIcon.onclick = function() {
+            sidebar.classList.toggle("small-sidebar");
+            container.classList.toggle("large-container");
+
+        }
+    </script> -->
+</body>
+
+</html>
